@@ -63,7 +63,7 @@ void Player::Update() {
 }
 
 void Player::OnCollision(Object* obj) {
-	if (obj->Type() == GROUND){
+	if (obj->Type() == GROUND) {
 		Rect* object = (Rect*)obj->bbox;
 		Rect* player = (Rect*)bbox;
 
@@ -94,7 +94,7 @@ void Player::Draw() {
 				ra->Frame(15);
 			}
 			break;
-		
+
 		case L:
 			la->Draw(x, y - 25);
 			la->NextFrame();
@@ -102,22 +102,35 @@ void Player::Draw() {
 				la->Frame(15);
 			}
 			break;
-		
+
 		case SR:
 			sra->Draw(x, y - 25);
 			sra->NextFrame();
 			break;
-		
+
 		case SL:
 			sla->Draw(x, y - 25);
 			sla->NextFrame();
 			break;
-		
+
 		case P:
 			pa->Draw(x, y - 25);
 			pa->NextFrame();
 			break;
-		
+
+		case JR:
+			jra->Draw(x, y - 25);
+			jra->NextFrame();
+			if (jra->Frame() == 5) {
+				jra->Frame(4);
+			}
+			break;
+
+		case JL:
+			jla->Draw(x, y - 25);
+			jla->NextFrame();
+			break;
+
 		default:
 			break;
 	}
@@ -133,22 +146,32 @@ void Player::Gravity() {
 
 void Player::StateMachine() {
 	uint previousState = currentState;	// Para detectar mudança no estado
-	
+
 	if (MainGame::VelX() < 0) {			// Vê se o player está virado para a direita
 		facingRight = true;
 	} else if (MainGame::VelX() > 0) {
 		facingRight = false;
 	}
-	
-	if (MainGame::VelX() < 0) {			// State Machine
-		currentState = R;
-	} else if (MainGame::VelX() > 0) {
-		currentState = L;
-	} else {
-		if (facingRight) {
-			currentState = SR;
+
+	if (facingRight) {
+		if (grounded) {
+			if (MainGame::VelX() == 0) {
+				currentState = SR;
+			} else {
+				currentState = R;
+			}
 		} else {
-			currentState = SL;
+			currentState = JR;
+		}
+	} else {
+		if (grounded) {
+			if (MainGame::VelX() == 0) {
+				currentState = SL;
+			} else {
+				currentState = L;
+			}
+		} else {
+			currentState = JL;
 		}
 	}
 
@@ -162,4 +185,6 @@ void Player::ResetAnimation() {
 	la->Restart();
 	sra->Restart();
 	sla->Restart();
+	jra->Restart();
+	jla->Restart();
 }
