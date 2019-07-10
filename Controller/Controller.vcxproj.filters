@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{18d0d638-16f5-4918-a05e-95f7395e6f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{2976de75-578b-4d39-a18f-8e0a02d496df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Arquivos de Cabeçalho">
+      <UniqueIdentifier>{f132ed62-9cfc-4ac9-9717-7105af970135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Arquivos de Origem">
+      <UniqueIdentifier>{44ca6108-bfb8-4533-8823-84468d6bbbf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Arquivos de Sombreamento">
+      <UniqueIdentifier>{0400ee6f-26f7-4a64-ac65-d4984cacff4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\HUD">
+      <UniqueIdentifier>{ca1d70fa-024e-48d5-b980-8502dd358779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes">
+      <UniqueIdentifier>{bcc24f20-7db9-4721-9133-1ea6c7911f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Level1">
+      <UniqueIdentifier>{72aca2f6-98f8-468b-a9f5-8f0c6a9f7a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Level2">
+      <UniqueIdentifier>{4f60e741-a7f9-4511-a70a-aeeeb8578ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\HUD\Life Bar">
+      <UniqueIdentifier>{d2211eeb-b145-4210-8ff3-edd5e3ebf322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\HUD\Super Bar">
+      <UniqueIdentifier>{c5296daf-b247-4dcf-87c9-2fcb2445937d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Main Game">
+      <UniqueIdentifier>{95394408-5ab1-424a-91d2-8edaf73445ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects">
+      <UniqueIdentifier>{95bc7663-fa82-46f5-9da7-d31273fb8bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\Player">
+      <UniqueIdentifier>{58bbada2-0cd1-42c9-a8eb-488178fe1590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\Ground">
+      <UniqueIdentifier>{e6e0669f-0deb-454a-bacf-f44dd8c37405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\Background">
+      <UniqueIdentifier>{1521e833-6816-4599-a802-533cb148393b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\HUD\Icon &amp; Cursor">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSet.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>Game\Main Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Game\Objects\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>Game\Objects\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1.cpp">
+      <Filter>Game\Scenes\Level1</Filter>
+    </ClCompile>
+    <ClCompile Include="Level2.cpp">
+      <Filter>Game\Scenes\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="Life.cpp">
+      <Filter>Game\HUD\Life Bar</Filter>
+    </ClCompile>
+    <ClCompile Include="Super.cpp">
+      <Filter>Game\HUD\Super Bar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSet.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>Game\HUD\Icon &amp; Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>Game\Main Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Game\Objects\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>Game\Objects\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Level1.h">
+      <Filter>Game\Scenes\Level1</Filter>
+    </ClInclude>
+    <ClInclude Include="Level2.h">
+      <Filter>Game\Scenes\Level2</Filter>
+    </ClInclude>
+    <ClInclude Include="Life.h">
+      <Filter>Game\HUD\Life Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="Super.h">
+      <Filter>Game\HUD\Super Bar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Pixel.hlsl">
+      <Filter>Engine\Arquivos de Sombreamento</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex.hlsl">
+      <Filter>Engine\Arquivos de Sombreamento</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Game\HUD\Icon &amp; Cursor</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
