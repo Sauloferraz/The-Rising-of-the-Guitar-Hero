@@ -9,7 +9,7 @@
 // Background ---------------------------------------------------------------------------------
 class Background : public Object {
 private:
-	Sprite* backgF	= new Sprite("Resources/Level1.png");		// Layer 1
+	Sprite* backgF	= new Sprite("Resources/BG.png");		    // Layer 1
 	Sprite* backgB	= new Sprite("Resources/BackgBack.png");	// Layer 2
 	Sprite* sky		= new Sprite("Resources/Sky.png");			// Fundo estático do background
 

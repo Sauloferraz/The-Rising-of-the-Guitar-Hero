@@ -53,6 +53,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Game\Objects\Enemy">
+      <UniqueIdentifier>{2619aee9-b8db-4507-af14-6f15cef9c2c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\Chord">
+      <UniqueIdentifier>{8fc836a6-cc93-44ad-9620-1e81de4a4d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{23201ba2-9815-4216-80d9-a90886800949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\EnemyGostosa">
+      <UniqueIdentifier>{fc6ca32a-cb2f-4e8e-bab5-48bd0b3085b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\Dino">
+      <UniqueIdentifier>{6bd2ca72-a813-43c4-9573-350540c03954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\GameOver">
+      <UniqueIdentifier>{f103b75f-fca1-4e8a-b109-6325b85a3c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\Door">
+      <UniqueIdentifier>{63f94938-f74c-48e1-ba11-e9712d9ed9e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\DoorFinal">
+      <UniqueIdentifier>{a9cb751b-e1c4-485e-843a-e46fae7d13df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Tutorial">
+      <UniqueIdentifier>{5a36eef8-73f5-4bdb-a2e7-ed8fec85d547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\EndGame">
+      <UniqueIdentifier>{8051e5c0-9789-4e80-934d-489e464d7ba9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -132,6 +162,42 @@
     </ClCompile>
     <ClCompile Include="Super.cpp">
       <Filter>Game\HUD\Super Bar</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Game\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Acorde.cpp">
+      <Filter>Game\Objects\Chord</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Gostosa.cpp">
+      <Filter>Game\Objects\EnemyGostosa</Filter>
+    </ClCompile>
+    <ClCompile Include="Dino.cpp">
+      <Filter>Game\Objects\Dino</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>Game\Scenes\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Game\Objects\Door</Filter>
+    </ClCompile>
+    <ClCompile Include="DoorFinal.cpp">
+      <Filter>Game\Objects\DoorFinal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial.cpp">
+      <Filter>Game\Scenes\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="EndGame.cpp">
+      <Filter>Game\Scenes\EndGame</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +284,42 @@
     </ClInclude>
     <ClInclude Include="Super.h">
       <Filter>Game\HUD\Super Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Game\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Acorde.h">
+      <Filter>Game\Objects\Chord</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Gostosa.h">
+      <Filter>Game\Objects\EnemyGostosa</Filter>
+    </ClInclude>
+    <ClInclude Include="Dino.h">
+      <Filter>Game\Objects\Dino</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>Game\Scenes\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Game\Objects\Door</Filter>
+    </ClInclude>
+    <ClInclude Include="DoorFinal.h">
+      <Filter>Game\Objects\DoorFinal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tutorial.h">
+      <Filter>Game\Scenes\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="EndGame.h">
+      <Filter>Game\Scenes\EndGame</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

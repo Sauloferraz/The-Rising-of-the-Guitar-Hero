@@ -3,12 +3,15 @@
 #include "Resources.h"
 #include "Level1.h"
 #include "MainGame.h"
+#include "Menu.h"
 // ------------------
 
 // Declarações Static
 float MainGame::velX;
 float MainGame::velY;
+bool  MainGame::viewBbox;
 Scene* MainGame::scene;
+Audio* MainGame::audio = nullptr;
 // ------------------
 
 // Main -------------------------------------------------------------------------------------------------------------------                                  
@@ -21,7 +24,7 @@ int APIENTRY WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
 	Engine::window->Mode(WINDOWED);
 	Engine::window->Size(1280, 720);
 	Engine::window->Color(25, 25, 25);
-	Engine::window->Title("Castelvania");
+	Engine::window->Title("The Rising of the Guitar Hero");
 	Engine::window->Icon(IDI_ICON);
 	// -------------------------------
 
@@ -35,12 +38,17 @@ int APIENTRY WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
 	engine->graphics->VSync(true);
 	// -----------------------------------
 
+	#if defined(_DEBUG) 
+		int status = engine->Start(new Menu());
+	#endif
+
 	// Inicia o jogo ------------------------
-	int status = engine->Start(new Level1());
+	 // int status2 = engine->Start(new Level1());
 	// --------------------------------------
 
 	// Finaliza a engine
 	delete engine;
+
 	// -----------------
 
 	return status;

@@ -4,6 +4,8 @@
 // Inclusões -----
 #include "Game.h"
 #include "Sprite.h"
+#include "Scene.h"
+#include "Player.h"
 // ----------------
 
 // Level 1 -----------------
@@ -17,6 +19,7 @@ public:
 	void Draw();
 	void Finalize();
 	void ViewBBox();
+	bool keyCtrl = false;
 };
 // -------------------------
 

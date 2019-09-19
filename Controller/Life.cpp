@@ -31,3 +31,7 @@ void Life::Damage(float damage) {
 	lifeAnim = new Animation(life, 1, true);
 	MoveTo(x - damage/2, 40);
 }
+
+int Life::Size() {
+	return lifeSize;
+}

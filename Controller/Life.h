@@ -19,6 +19,7 @@ public:
 	void Update();
 	void Draw();
 	void Damage(float damage);
+	int Size();
 };
 // ----------------------------
 
